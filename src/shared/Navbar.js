@@ -96,12 +96,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between lg:w-1/2">
           <Link href={"/"}>
             <div className="flex items-center space-x-1">
-              <Image
+              {/* <Image
                 src="https://res.cloudinary.com/dh20zdtys/image/upload/v1723709261/49f87c8af2a00c070b11e2b15349fa1c_uakips.png"
                 width={50}
                 height={50}
                 alt="Logo"
-              />
+              /> */}
               <h2 className={`${textColorClass} font-bold text-xl`}>
                 Enlighten
               </h2>

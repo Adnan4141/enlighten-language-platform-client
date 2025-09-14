@@ -6,13 +6,13 @@ const people = [
     name: 'Irma',
     nativeLanguage: 'German',
     learningLanguage: 'English',
-    imageSrc: 'https://res.cloudinary.com/dh20zdtys/image/upload/v1723734938/jane_xtm2nz.jpg', // Replace with actual image path
+    imageSrc: '/model/m2.jpg', // Replace with actual image path
 },
 {
     name: 'Jane',
     nativeLanguage: 'English',
     learningLanguage: 'Spanish',
-    imageSrc: 'https://res.cloudinary.com/dh20zdtys/image/upload/v1723734935/irma_ycsya6.jpg', // Replace with actual image path
+    imageSrc: '/model/m4.jpg', // Replace with actual image path
   },
 ];
 
@@ -35,8 +35,8 @@ const TeamSection = () => {
               <Image
                 src={person.imageSrc}
                 alt={person.name}
-                width={500}
-                height={0}
+                width={900}
+                height={1100}
                 layout="responsive"
                 className="object-cover max-h-[500px] w-full"
               />
