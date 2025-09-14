@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
 
 // Initialize Socket.IO client connection
-const socket = io("http://localhost:8080", {
+const socket = io(`${process.env.NEXT_PUBLIC_BASE_URL}`, {
   path: "/api/socket.io",
   autoConnect: true,
 }); //

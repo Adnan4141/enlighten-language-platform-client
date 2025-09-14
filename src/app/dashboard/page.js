@@ -1,12 +1,12 @@
  
-import Blog from '@/components/admin/Blog';
+// import Blog from '@/components/admin/Blog';
 import DashboardContainer from '@/container/DashboardContainer';
 import React from 'react';
 
 const page = () => {
     return (
         <DashboardContainer>
-            <Blog/>
+            {/* <Blog/> */}
         </DashboardContainer>
     );
 };

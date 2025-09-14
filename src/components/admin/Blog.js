@@ -16,8 +16,8 @@ const Blog = () => {
   const handleFormSubmit = async (data) => {
     const method = editingBlog ? "PUT" : "POST";
     const url = editingBlog
-      ? `http://localhost:8080/api/blogs/${editingBlog.id}`
-      : "http://localhost:8080/api/blogs";
+      ? `${process.env.NEXT_PUBLIC_BASE_URL}/api/blogs/${editingBlog.id}`
+      : `${process.env.NEXT_PUBLIC_BASE_URL}/api/blogs`;
 
     try {
       const res = await fetch(url, {
@@ -50,7 +50,7 @@ const Blog = () => {
   // Function to delete a blog
   const handleDeleteBlog = async (id) => {
     try {
-      await fetch(`http://localhost:8080/api/blogs/${id}`, {
+      await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/blogs/${id}`, {
         method: "DELETE",
       });
       // You can trigger blog list refresh here

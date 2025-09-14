@@ -16,7 +16,7 @@ const BlogList = ({ onEdit, onDelete, isLoader }) => {
   const fetchBlogs = async (page) => {
     setLoading(true);
     try {
-      const response = await fetch(`${NEXT_PUBLIC_BASE_URL}/api/blogs?page=${page}&limit=${blogsPerPage}`);
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/blogs?page=${page}&limit=${blogsPerPage}`);
       const data = await response.json();
       setBlogs(data.blogs);
       console.log(data.blogs)

@@ -12,7 +12,7 @@ export const initializeSocket = (reduxStore) => {
   store = reduxStore;
 
   if (!socket) {
-    socket = io("http://localhost:8080", {
+    socket = io(`${process.env.NEXT_PUBLIC_BASE_URL}`, {
       reconnection: true,
       reconnectionDelay: 1000,
       reconnectionDelayMax: 5000,

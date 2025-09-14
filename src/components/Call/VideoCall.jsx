@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { io } from "socket.io-client";
 import Peer from "simple-peer";
-const socket = io.connect("http://localhost:8080");
+const socket = io.connect(`${process.env.NEXT_PUBLIC_BASE_URL}`);
 
 const VideoCall = () => {
   const [me, setMe] = useState("");
